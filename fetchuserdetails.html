@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Github User</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- boostrap link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- style css -->
+	<link rel="stylesheet"  type="text/css" href="./src/style.css">
+
+</head>
+<body>
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form class="form" id="form">
+					<div class="card mt-4 p-4 border">
+						<div class="search-box d-inline-block">
+							<input type="search" class="form-control" placeholder="Search Github User" id="searchinputbox" />
+							<span id="searchbox-error"></span>
+						</div>
+						<div>
+							<button type="submit" class="btn btn-primary mt-3" id="searchbtn">Search</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row mt-4" >
+			<div class="col-md-12">
+				<div class="card p-4">
+					<div class="social-profile">
+						<h3></h3>
+					</div>
+					<div class="row inline-block" id="usernotfound">
+						<div class="col-lg-3">
+							<a id="profile-link">
+								<img id="img"  class="rounded" />
+							</a>
+							<h5 class="card-title fw-bold mt-2" id="name"></h5>
+
+							<small class="card-title fw-bold text-muted" id="username"></small>
+							<div class="user-profile-bio" id="user-profile-bio">
+
+							</div>
+
+							<ul class="list-unstyled list-inline">
+								<li class="list-inline-item fw-bold" id="followerslength"></li>
+								<li class="list-inline-item fw-bold" id="followinglength"></li>
+							</ul>
+
+							<hr>
+							<div class="" id="blog">
+
+							</div>
+						</div>
+						<div class="col-md-6">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- main js -->
+<script src="./src/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
